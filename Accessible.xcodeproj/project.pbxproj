@@ -14,10 +14,24 @@
 		3A6667821D8532F100E2161A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667811D8532F100E2161A /* Assets.xcassets */; };
 		3A6667851D8532F100E2161A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667831D8532F100E2161A /* LaunchScreen.storyboard */; };
 		3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66678F1D8532F100E2161A /* AccessibleUITests.swift */; };
+		3A66679E1D85393C00E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
+		3A66679F1D85393C00E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
+		3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
+		3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
+		3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A91D85399000E2161A /* AccessibleTests.swift */; };
+		3A6667B11D853B2200E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
+		3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3A66678C1D8532F100E2161A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A66676D1D8532F100E2161A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6667741D8532F100E2161A;
+			remoteInfo = Accessible;
+		};
+		3A6667AC1D85399000E2161A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A66676D1D8532F100E2161A /* Project object */;
 			proxyType = 1;
@@ -38,6 +52,11 @@
 		3A66678B1D8532F100E2161A /* AccessibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A66678F1D8532F100E2161A /* AccessibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleUITests.swift; sourceTree = "<group>"; };
 		3A6667911D8532F100E2161A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A66679D1D85393C00E2161A /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		3A6667A01D85395E00E2161A /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		3A6667A71D85399000E2161A /* AccessibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6667A91D85399000E2161A /* AccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleTests.swift; sourceTree = "<group>"; };
+		3A6667AB1D85399000E2161A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +74,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A6667A41D85399000E2161A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +89,7 @@
 			children = (
 				3A6667771D8532F100E2161A /* Accessible */,
 				3A66678E1D8532F100E2161A /* AccessibleUITests */,
+				3A6667A81D85399000E2161A /* AccessibleTests */,
 				3A6667761D8532F100E2161A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +99,7 @@
 			children = (
 				3A6667751D8532F100E2161A /* Accessible.app */,
 				3A66678B1D8532F100E2161A /* AccessibleUITests.xctest */,
+				3A6667A71D85399000E2161A /* AccessibleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +114,8 @@
 				3A6667811D8532F100E2161A /* Assets.xcassets */,
 				3A6667831D8532F100E2161A /* LaunchScreen.storyboard */,
 				3A6667861D8532F100E2161A /* Info.plist */,
+				3A66679D1D85393C00E2161A /* Data.json */,
+				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
 			);
 			path = Accessible;
 			sourceTree = "<group>";
@@ -97,6 +127,15 @@
 				3A6667911D8532F100E2161A /* Info.plist */,
 			);
 			path = AccessibleUITests;
+			sourceTree = "<group>";
+		};
+		3A6667A81D85399000E2161A /* AccessibleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6667A91D85399000E2161A /* AccessibleTests.swift */,
+				3A6667AB1D85399000E2161A /* Info.plist */,
+			);
+			path = AccessibleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +176,24 @@
 			productReference = 3A66678B1D8532F100E2161A /* AccessibleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3A6667A61D85399000E2161A /* AccessibleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6667AE1D85399000E2161A /* Build configuration list for PBXNativeTarget "AccessibleTests" */;
+			buildPhases = (
+				3A6667A31D85399000E2161A /* Sources */,
+				3A6667A41D85399000E2161A /* Frameworks */,
+				3A6667A51D85399000E2161A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6667AD1D85399000E2161A /* PBXTargetDependency */,
+			);
+			name = AccessibleTests;
+			productName = AccessibleTests;
+			productReference = 3A6667A71D85399000E2161A /* AccessibleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +209,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					3A66678A1D8532F100E2161A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6667741D8532F100E2161A;
+					};
+					3A6667A61D85399000E2161A = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3A6667741D8532F100E2161A;
@@ -172,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				3A6667741D8532F100E2161A /* Accessible */,
+				3A6667A61D85399000E2161A /* AccessibleTests */,
 				3A66678A1D8532F100E2161A /* AccessibleUITests */,
 			);
 		};
@@ -185,6 +248,7 @@
 				3A6667851D8532F100E2161A /* LaunchScreen.storyboard in Resources */,
 				3A6667821D8532F100E2161A /* Assets.xcassets in Resources */,
 				3A6667801D8532F100E2161A /* Main.storyboard in Resources */,
+				3A66679E1D85393C00E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +256,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A66679F1D85393C00E2161A /* Data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6667A51D85399000E2161A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6667B11D853B2200E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A66677D1D8532F100E2161A /* DetailViewController.swift in Sources */,
 				3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */,
 				3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */,
@@ -212,7 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6667A31D85399000E2161A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
+				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +307,11 @@
 			isa = PBXTargetDependency;
 			target = 3A6667741D8532F100E2161A /* Accessible */;
 			targetProxy = 3A66678C1D8532F100E2161A /* PBXContainerItemProxy */;
+		};
+		3A6667AD1D85399000E2161A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6667741D8532F100E2161A /* Accessible */;
+			targetProxy = 3A6667AC1D85399000E2161A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,6 +476,32 @@
 			};
 			name = Release;
 		};
+		3A6667AF1D85399000E2161A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AccessibleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.AccessibleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accessible.app/Accessible";
+			};
+			name = Debug;
+		};
+		3A6667B01D85399000E2161A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AccessibleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akosma.AccessibleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accessible.app/Accessible";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -412,6 +527,14 @@
 			buildConfigurations = (
 				3A6667981D8532F100E2161A /* Debug */,
 				3A6667991D8532F100E2161A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A6667AE1D85399000E2161A /* Build configuration list for PBXNativeTarget "AccessibleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6667AF1D85399000E2161A /* Debug */,
+				3A6667B01D85399000E2161A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
