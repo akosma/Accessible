@@ -21,6 +21,12 @@
 		3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A91D85399000E2161A /* AccessibleTests.swift */; };
 		3A6667B11D853B2200E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
 		3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
+		3A6667B51D85411B00E2161A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667B31D85411B00E2161A /* CustomCell.swift */; };
+		3A6667B61D85411B00E2161A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667B31D85411B00E2161A /* CustomCell.swift */; };
+		3A6667B71D85411B00E2161A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667B31D85411B00E2161A /* CustomCell.swift */; };
+		3A6667B81D85411B00E2161A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667B41D85411B00E2161A /* CustomCell.xib */; };
+		3A6667B91D85411B00E2161A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667B41D85411B00E2161A /* CustomCell.xib */; };
+		3A6667BA1D85411B00E2161A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667B41D85411B00E2161A /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,8 @@
 		3A6667A71D85399000E2161A /* AccessibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6667A91D85399000E2161A /* AccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleTests.swift; sourceTree = "<group>"; };
 		3A6667AB1D85399000E2161A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6667B31D85411B00E2161A /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3A6667B41D85411B00E2161A /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,8 @@
 				3A6667861D8532F100E2161A /* Info.plist */,
 				3A66679D1D85393C00E2161A /* Data.json */,
 				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
+				3A6667B31D85411B00E2161A /* CustomCell.swift */,
+				3A6667B41D85411B00E2161A /* CustomCell.xib */,
 			);
 			path = Accessible;
 			sourceTree = "<group>";
@@ -245,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6667B81D85411B00E2161A /* CustomCell.xib in Resources */,
 				3A6667851D8532F100E2161A /* LaunchScreen.storyboard in Resources */,
 				3A6667821D8532F100E2161A /* Assets.xcassets in Resources */,
 				3A6667801D8532F100E2161A /* Main.storyboard in Resources */,
@@ -256,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6667BA1D85411B00E2161A /* CustomCell.xib in Resources */,
 				3A66679F1D85393C00E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6667B91D85411B00E2161A /* CustomCell.xib in Resources */,
 				3A6667B11D853B2200E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +290,7 @@
 			files = (
 				3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A66677D1D8532F100E2161A /* DetailViewController.swift in Sources */,
+				3A6667B51D85411B00E2161A /* CustomCell.swift in Sources */,
 				3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */,
 				3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
+				3A6667B71D85411B00E2161A /* CustomCell.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
+				3A6667B61D85411B00E2161A /* CustomCell.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

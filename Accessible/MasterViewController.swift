@@ -22,6 +22,9 @@ class MasterViewController: UITableViewController {
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            
+            let nib = UINib(nibName: "CustomCell", bundle: nil)
+            self.tableView.register(nib, forCellReuseIdentifier: "Cell")
         }
     }
 
@@ -58,12 +61,18 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70.0
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
 
         let object = objects[indexPath.row] as [String: AnyObject]
-        cell.textLabel!.text = object["name"] as? String
+        cell.nameLabel!.text = object["name"] as? String
+        let completeAddress = "\(object["address"]!) – \(object["zip"]!) \(object["city"]!)"
+        cell.addressLabel!.text = completeAddress
         return cell
     }
 
