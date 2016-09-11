@@ -10,6 +10,7 @@
 		3A4A15381D8553BD00468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
 		3A4A15391D85562300468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
 		3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
+		3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
 		3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
 		3A6667801D8532F100E2161A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A66677E1D8532F100E2161A /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		3A4A15371D8553BD00468D8B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3A4A153B1D855A2F00468D8B /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		3A6667751D8532F100E2161A /* Accessible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6667781D8532F100E2161A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A66677A1D8532F100E2161A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				3A6667B31D85411B00E2161A /* CustomCell.swift */,
 				3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */,
 				3A4A15371D8553BD00468D8B /* MapViewController.swift */,
+				3A4A153B1D855A2F00468D8B /* Customer.swift */,
 				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
 				3A66677E1D8532F100E2161A /* Main.storyboard */,
 				3A6667811D8532F100E2161A /* Assets.xcassets */,
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6667BC1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
+				3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */,
 				3A4A15381D8553BD00468D8B /* MapViewController.swift in Sources */,
 				3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A6667B51D85411B00E2161A /* CustomCell.swift in Sources */,

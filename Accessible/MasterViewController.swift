@@ -10,7 +10,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var customers = loadJSON()!
+    var customers = loadJSON()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +43,9 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
 
-        let object = customers[indexPath.row] as [String: AnyObject]
-        cell.nameLabel!.text = object["name"] as? String
-        let completeAddress = "\(object["address"]!) – \(object["zip"]!) \(object["city"]!)"
+        let object = customers[indexPath.row]
+        cell.nameLabel!.text = object.name
+        let completeAddress = "\(object.address) – \(object.zip) \(object.city)"
         cell.addressLabel!.text = completeAddress
         return cell
     }

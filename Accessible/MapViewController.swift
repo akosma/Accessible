@@ -12,10 +12,10 @@ import MapKit
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    var customer: [String: AnyObject]?
+    var customer: Customer?
 
     override func viewWillAppear(_ animated: Bool) {
-        let location = customer?["location"] as? String
+        let location = customer?.location
         let coords = location?.components(separatedBy: ", ")
         let lat = Double((coords?[0])!)!
         let long = Double((coords?[1])!)!
@@ -24,7 +24,7 @@ class MapViewController: UIViewController {
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
-        annotation.title = customer?["name"] as? String
+        annotation.title = customer?.name
         mapView.addAnnotation(annotation)
     }
 }
