@@ -26,6 +26,13 @@ class DetailTableViewController: UITableViewController {
         zipCell.detailTextLabel?.text = customer?["zip"] as? String
         cityCell.detailTextLabel?.text = customer?["city"] as? String
         countryCell.detailTextLabel?.text = customer?["country"] as? String
-        ageCell.detailTextLabel?.text = "\(customer?["age"]!)"
+        ageCell.detailTextLabel?.text = "\(customer?["age"] as! Int)"
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let controller = segue.destination as! MapViewController
+            controller.customer = customer
+        }
     }
 }

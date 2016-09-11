@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A4A15381D8553BD00468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
+		3A4A15391D85562300468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
+		3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
 		3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
 		3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
 		3A6667801D8532F100E2161A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A66677E1D8532F100E2161A /* Main.storyboard */; };
@@ -127,8 +129,8 @@
 				3A66677A1D8532F100E2161A /* MasterViewController.swift */,
 				3A6667B31D85411B00E2161A /* CustomCell.swift */,
 				3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */,
-				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
 				3A4A15371D8553BD00468D8B /* MapViewController.swift */,
+				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
 				3A66677E1D8532F100E2161A /* Main.storyboard */,
 				3A6667811D8532F100E2161A /* Assets.xcassets */,
 				3A6667831D8532F100E2161A /* LaunchScreen.storyboard */,
@@ -321,6 +323,7 @@
 				3A6667BE1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
 				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A6667B71D85411B00E2161A /* CustomCell.swift in Sources */,
+				3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +335,7 @@
 				3A6667BD1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
 				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
 				3A6667B61D85411B00E2161A /* CustomCell.swift in Sources */,
+				3A4A15391D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
