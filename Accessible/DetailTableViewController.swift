@@ -26,7 +26,7 @@ class DetailTableViewController: UITableViewController {
         zipCell.detailTextLabel?.text = customer?.zip
         cityCell.detailTextLabel?.text = customer?.city
         countryCell.detailTextLabel?.text = customer?.country
-        ageCell.detailTextLabel?.text = "\(customer?.age)"
+        ageCell.detailTextLabel?.text = "\(customer!.age)"
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

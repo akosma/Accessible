@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Customer: NSObject {
+struct Customer {
     var name = ""
     var address = ""
     var age = 0

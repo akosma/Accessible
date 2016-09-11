@@ -21,7 +21,7 @@ func loadJSON() -> [Customer] {
 
         var results = [Customer]()
         for item in shuffled! {
-            let customer = Customer()
+            var customer = Customer()
             customer.name = item["name"] as! String
             customer.address = item["address"] as! String
             customer.zip = item["zip"] as! String
