@@ -10,6 +10,7 @@ import UIKit
 
 class FormViewController: UIViewController {
 
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
@@ -41,6 +42,11 @@ class FormViewController: UIViewController {
             countryField.text = customer.country
             ageField.text = "\(customer.age)"
             favoriteSwitch.isOn = customer.favorite
+            
+//            NotificationCenter.default.addObserver(self,
+//                                                   selector: #selector(dynamicType),
+//                                                   name: .UIContentSizeCategoryDidChange,
+//                                                   object: nil)
         }
     }
     
@@ -95,3 +101,16 @@ extension FormViewController: UITextFieldDelegate {
         validate()
     }
 }
+
+//extension FormViewController {
+//    func dynamicType(notification: Notification) {
+//        let font = UIFont.preferredFont(forTextStyle: .body)
+//        for label in labels {
+//            label.font = font
+//        }
+//        for field in fields {
+//            field.font = font
+//        }
+//        saveButton.titleLabel?.font = font
+//    }
+//}
