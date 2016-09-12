@@ -29,6 +29,9 @@
 		3AB942051D86CF3A00E6112F /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB942031D86CF3A00E6112F /* FormViewController.xib */; };
 		3AB942061D86D08600E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
 		3AB942071D86D08700E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
+		3AB942091D86DEC600E6112F /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942081D86DEC600E6112F /* FavoriteControl.swift */; };
+		3AB9420A1D86DEC600E6112F /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942081D86DEC600E6112F /* FavoriteControl.swift */; };
+		3AB9420B1D86DEC600E6112F /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942081D86DEC600E6112F /* FavoriteControl.swift */; };
 		3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +74,7 @@
 		3A6667C01D854F2500E2161A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3AB942021D86CF3A00E6112F /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		3AB942031D86CF3A00E6112F /* FormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		3AB942081D86DEC600E6112F /* FavoriteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 				3A4A15371D8553BD00468D8B /* MapViewController.swift */,
 				3A4A153B1D855A2F00468D8B /* Customer.swift */,
 				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
+				3AB942081D86DEC600E6112F /* FavoriteControl.swift */,
 				3AB942031D86CF3A00E6112F /* FormViewController.xib */,
 				3A66677E1D8532F100E2161A /* Main.storyboard */,
 				3A6667811D8532F100E2161A /* Assets.xcassets */,
@@ -310,6 +315,7 @@
 				3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */,
 				3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */,
+				3AB942091D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +328,7 @@
 				3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */,
 				3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
+				3AB9420B1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +341,7 @@
 				3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */,
 				3A4A15391D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
+				3AB9420A1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

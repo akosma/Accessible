@@ -57,7 +57,7 @@ class FormViewController: UIViewController {
     
     func validate() {
         var counter = 0
-        var errors = 0
+//        var errors = 0
         for field in fields {
             let label = labels[counter]
             if field.text?.lengthOfBytes(using: .utf8) == 0 {
@@ -86,7 +86,7 @@ class FormViewController: UIViewController {
             }
             counter += 1
         }
-        errorLabel.isHidden = errors == 0
+//        errorLabel.isHidden = errors == 0
     }
 }
 
