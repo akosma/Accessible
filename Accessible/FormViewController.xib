@@ -18,7 +18,7 @@
                 <outlet property="countryLabel" destination="K8w-pT-7mO" id="6Bg-U7-zve"/>
                 <outlet property="errorLabel" destination="IgX-4x-Sq4" id="piH-Zy-ruu"/>
                 <outlet property="favoriteLabel" destination="7vj-dH-Hpm" id="amc-Ve-xhS"/>
-                <outlet property="favoriteSwitch" destination="Duv-XP-8O4" id="gTM-ZW-aR0"/>
+                <outlet property="favoriteSwitch" destination="dk8-xJ-9qK" id="GOZ-j6-ZN9"/>
                 <outlet property="nameField" destination="7gg-0y-iQ0" id="mC4-F8-4yc"/>
                 <outlet property="nameLabel" destination="0oA-8h-MzE" id="y3g-b2-TnO"/>
                 <outlet property="saveButton" destination="cTO-9c-5ZR" id="B9h-49-OkY"/>
@@ -154,41 +154,45 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error: fields cannot be empty" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgX-4x-Sq4">
-                    <frame key="frameInset" minX="156" minY="359" width="210.5" height="19.5"/>
+                    <frame key="frameInset" minX="156" minY="373" width="210.5" height="19.5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Duv-XP-8O4">
-                    <constraints>
-                        <constraint firstAttribute="height" constant="31" id="EHq-71-x1M"/>
-                        <constraint firstAttribute="width" constant="49" id="dsk-8K-g90"/>
-                    </constraints>
-                </switch>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTO-9c-5ZR">
                     <state key="normal" title="Save"/>
                     <connections>
                         <action selector="save:" destination="-1" eventType="touchUpInside" id="UTH-Sn-4iu"/>
                     </connections>
                 </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-xJ-9qK" customClass="FavoriteControl" customModule="Accessible" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="jiJ-7a-PiL"/>
+                        <constraint firstAttribute="width" constant="44" id="ygo-fh-W1m"/>
+                    </constraints>
+                    <connections>
+                        <action selector="favoriteTouched:" destination="-1" eventType="valueChanged" id="GjV-sW-ZKP"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="mv2-eD-8dW" firstAttribute="baseline" secondItem="Qtp-sK-DQL" secondAttribute="baseline" id="1bW-so-Xc8"/>
                 <constraint firstItem="J4a-od-wWE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="1i4-Br-6IN"/>
+                <constraint firstItem="dk8-xJ-9qK" firstAttribute="baseline" secondItem="7vj-dH-Hpm" secondAttribute="baseline" id="2mi-8A-wsi"/>
                 <constraint firstItem="mv2-eD-8dW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="3jG-Hc-qHF"/>
                 <constraint firstItem="cTO-9c-5ZR" firstAttribute="top" secondItem="7vj-dH-Hpm" secondAttribute="bottom" constant="7" id="4kR-wj-6k1"/>
                 <constraint firstItem="7gg-0y-iQ0" firstAttribute="baseline" secondItem="0oA-8h-MzE" secondAttribute="baseline" id="5ly-HO-f5X"/>
                 <constraint firstItem="0oA-8h-MzE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="6We-a3-vhy"/>
-                <constraint firstItem="Duv-XP-8O4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="AA3-mA-hD9"/>
                 <constraint firstItem="CK8-Vo-wqh" firstAttribute="baseline" secondItem="K8w-pT-7mO" secondAttribute="baseline" id="B5U-25-dou"/>
                 <constraint firstItem="Qtp-sK-DQL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="CHY-ey-nz9"/>
                 <constraint firstItem="Hdt-6m-XiP" firstAttribute="baseline" secondItem="db3-03-aKR" secondAttribute="baseline" id="DUN-JO-mPK"/>
                 <constraint firstItem="7gg-0y-iQ0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="EhZ-lQ-udb"/>
                 <constraint firstItem="XZE-vP-Kgu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="Epw-jK-4vV"/>
                 <constraint firstItem="db3-03-aKR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="IUT-S7-32A"/>
-                <constraint firstItem="7vj-dH-Hpm" firstAttribute="top" secondItem="K8w-pT-7mO" secondAttribute="bottom" constant="33" id="Iwk-mN-x0z"/>
+                <constraint firstItem="7vj-dH-Hpm" firstAttribute="top" secondItem="K8w-pT-7mO" secondAttribute="bottom" constant="47" id="Iwk-mN-x0z"/>
                 <constraint firstItem="7vj-dH-Hpm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="JfI-ed-1f6"/>
                 <constraint firstItem="pLj-KR-SIq" firstAttribute="baseline" secondItem="J4a-od-wWE" secondAttribute="baseline" id="Lga-Ir-UWL"/>
                 <constraint firstItem="pLj-KR-SIq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="Nbe-y4-QCW"/>
@@ -202,10 +206,10 @@
                 <constraint firstItem="XZE-vP-Kgu" firstAttribute="baseline" secondItem="Ti8-iw-NKM" secondAttribute="baseline" id="adL-gN-yJe"/>
                 <constraint firstItem="Hdt-6m-XiP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="ajM-96-cSV"/>
                 <constraint firstItem="K8w-pT-7mO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ffz-f9-eFn"/>
-                <constraint firstItem="Duv-XP-8O4" firstAttribute="baseline" secondItem="7vj-dH-Hpm" secondAttribute="baseline" id="ggA-Ch-7pE"/>
                 <constraint firstItem="Qtp-sK-DQL" firstAttribute="top" secondItem="db3-03-aKR" secondAttribute="bottom" constant="17" id="jN8-cx-88g"/>
                 <constraint firstItem="0oA-8h-MzE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="jun-Yu-Hbg"/>
                 <constraint firstItem="Ti8-iw-NKM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="oLa-9H-Ewm"/>
+                <constraint firstItem="dk8-xJ-9qK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="wLP-ZN-rFO"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

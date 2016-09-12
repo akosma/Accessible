@@ -25,12 +25,12 @@ class FormViewController: UIViewController {
     @IBOutlet weak var zipField: UITextField!
     @IBOutlet weak var cityField: UITextField!
     @IBOutlet weak var countryField: UITextField!
-    @IBOutlet weak var favoriteSwitch: UISwitch!
+    @IBOutlet weak var favoriteSwitch: FavoriteControl!
     @IBOutlet var labels: [UILabel]!
     @IBOutlet var fields: [UITextField]!
     
     var customer: Customer?
-    let errorPrefix = "* "
+//    let errorPrefix = "* "
     
     override func viewDidLoad() {
         if let customer = customer {
@@ -50,15 +50,19 @@ class FormViewController: UIViewController {
         }
     }
     
-    @IBAction func save(_ sender: AnyObject) {
-        validate()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showMap" {
             let controller = segue.destination as! MapViewController
             controller.customer = customer
         }
+    }
+    
+    @IBAction func favoriteTouched(_ sender: AnyObject) {
+        customer?.favorite = favoriteSwitch.isOn
+    }
+    
+    @IBAction func save(_ sender: AnyObject) {
+        validate()
     }
     
     func validate() {
