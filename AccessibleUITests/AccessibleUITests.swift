@@ -28,9 +28,12 @@ class AccessibleUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMakeCustomerFavorite() {
+        let app = XCUIApplication()
+        app.tables.cells.element(boundBy: 0).tap()
+        app.buttons["Favorite"].tap()
+        XCTAssertEqual(app.buttons["Favorite"].value as? String, "Favorite customer")
+        app.buttons["Favorite"].tap()
+        XCTAssertEqual(app.buttons["Favorite"].value as? String, "Not favorite customer")
     }
-    
 }

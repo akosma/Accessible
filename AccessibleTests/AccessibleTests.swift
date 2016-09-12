@@ -23,9 +23,9 @@ class AccessibleTests: XCTestCase {
     func testCanLoadJSON() {
         let obj = loadJSON()
         XCTAssertNotNil(obj)
-        XCTAssertEqual(obj?.count, 100)
+        XCTAssertEqual(obj.count, 100)
         
-        let firstObj = obj?[0]
-        XCTAssertNotNil(firstObj?["country"])
+        let firstObj = obj[0]
+        XCTAssertNotNil(firstObj.country)
     }
 }
