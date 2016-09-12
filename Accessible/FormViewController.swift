@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AudioToolbox
+import AVFoundation
 
 class FormViewController: UIViewController {
 
@@ -30,6 +32,7 @@ class FormViewController: UIViewController {
     @IBOutlet var fields: [UITextField]!
     
     var customer: Customer?
+//    var voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
 //    let errorPrefix = "* "
     
     override func viewDidLoad() {
@@ -43,10 +46,17 @@ class FormViewController: UIViewController {
             ageField.text = "\(customer.age)"
             favoriteSwitch.isOn = customer.favorite
             
-//            NotificationCenter.default.addObserver(self,
-//                                                   selector: #selector(dynamicType),
-//                                                   name: .UIContentSizeCategoryDidChange,
-//                                                   object: nil)
+//            let center = NotificationCenter.default
+//            center.addObserver(self,
+//                               selector: #selector(dynamicType),
+//                               name: .UIContentSizeCategoryDidChange,
+//                               object: nil)
+//            
+//            let not = NSNotification.Name(rawValue: UIAccessibilityVoiceOverStatusChanged)
+//            center.addObserver(self,
+//                               selector: #selector(voiceOverStatus),
+//                               name: not,
+//                               object: nil)
         }
     }
     
@@ -89,7 +99,23 @@ class FormViewController: UIViewController {
             }
             counter += 1
         }
-//        errorLabel.isHidden = errors == 0
+//        if errors > 0 {
+//            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+//            if (voiceOverRunning) {
+//                let text = errorLabel.text!
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+//                    let utterance = AVSpeechUtterance(string: text)
+//                    utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+//                    
+//                    let synthesizer = AVSpeechSynthesizer()
+//                    synthesizer.speak(utterance)
+//                })
+//            }
+//            errorLabel.isHidden = false
+//        }
+//        else {
+//            errorLabel.isHidden = true
+//        }
     }
 }
 
@@ -109,5 +135,9 @@ extension FormViewController: UITextFieldDelegate {
 //            field.font = font
 //        }
 //        saveButton.titleLabel?.font = font
+//    }
+//    
+//    func voiceOverStatus(notification: Notification) {
+//        voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
 //    }
 //}
