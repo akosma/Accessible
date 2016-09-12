@@ -12,19 +12,15 @@ class MasterViewController: UITableViewController {
 
     var customers = loadJSON()
     
-    /*
-    // TO BE REMOVED BEFORE DEMO
-    override func viewDidLoad() {
-        self.tableView.rowHeight = UITableViewAutomaticDimension;
-        self.tableView.estimatedRowHeight = 44.0;
-        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
-    }
+//    override func viewDidLoad() {
+//        self.tableView.rowHeight = UITableViewAutomaticDimension;
+//        self.tableView.estimatedRowHeight = 44.0;
+//        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+//    }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Customers"
     }
-    // TO BE REMOVED BEFORE DEMO
-    */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showForm" {
