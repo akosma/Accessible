@@ -16,4 +16,5 @@ struct Customer {
     var city = ""
     var country = ""
     var location = ""
+    var favorite = false
 }

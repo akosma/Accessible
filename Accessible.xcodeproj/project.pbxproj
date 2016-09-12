@@ -24,16 +24,11 @@
 		3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A91D85399000E2161A /* AccessibleTests.swift */; };
 		3A6667B11D853B2200E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
 		3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
-		3A6667B51D85411B00E2161A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667B31D85411B00E2161A /* CustomCell.swift */; };
-		3A6667B61D85411B00E2161A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667B31D85411B00E2161A /* CustomCell.swift */; };
-		3A6667B71D85411B00E2161A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667B31D85411B00E2161A /* CustomCell.swift */; };
-		3A6667B81D85411B00E2161A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667B41D85411B00E2161A /* CustomCell.xib */; };
-		3A6667B91D85411B00E2161A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667B41D85411B00E2161A /* CustomCell.xib */; };
-		3A6667BA1D85411B00E2161A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667B41D85411B00E2161A /* CustomCell.xib */; };
-		3A6667BC1D854A6900E2161A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */; };
-		3A6667BD1D854A6900E2161A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */; };
-		3A6667BE1D854A6900E2161A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */; };
 		3A6667C11D854F2500E2161A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6667C01D854F2500E2161A /* MapKit.framework */; };
+		3AB942041D86CF3A00E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
+		3AB942051D86CF3A00E6112F /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB942031D86CF3A00E6112F /* FormViewController.xib */; };
+		3AB942061D86D08600E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
+		3AB942071D86D08700E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
 		3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 /* End PBXBuildFile section */
@@ -73,10 +68,9 @@
 		3A6667A71D85399000E2161A /* AccessibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6667A91D85399000E2161A /* AccessibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleTests.swift; sourceTree = "<group>"; };
 		3A6667AB1D85399000E2161A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A6667B31D85411B00E2161A /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		3A6667B41D85411B00E2161A /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		3A6667C01D854F2500E2161A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3AB942021D86CF3A00E6112F /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		3AB942031D86CF3A00E6112F /* FormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,17 +125,16 @@
 			children = (
 				3A6667781D8532F100E2161A /* AppDelegate.swift */,
 				3A66677A1D8532F100E2161A /* MasterViewController.swift */,
-				3A6667B31D85411B00E2161A /* CustomCell.swift */,
-				3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */,
+				3AB942021D86CF3A00E6112F /* FormViewController.swift */,
 				3A4A15371D8553BD00468D8B /* MapViewController.swift */,
 				3A4A153B1D855A2F00468D8B /* Customer.swift */,
 				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
+				3AB942031D86CF3A00E6112F /* FormViewController.xib */,
 				3A66677E1D8532F100E2161A /* Main.storyboard */,
 				3A6667811D8532F100E2161A /* Assets.xcassets */,
 				3A6667831D8532F100E2161A /* LaunchScreen.storyboard */,
 				3A6667861D8532F100E2161A /* Info.plist */,
 				3A66679D1D85393C00E2161A /* Data.json */,
-				3A6667B41D85411B00E2161A /* CustomCell.xib */,
 			);
 			path = Accessible;
 			sourceTree = "<group>";
@@ -280,10 +273,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667B81D85411B00E2161A /* CustomCell.xib in Resources */,
 				3A6667851D8532F100E2161A /* LaunchScreen.storyboard in Resources */,
 				3A6667821D8532F100E2161A /* Assets.xcassets in Resources */,
 				3A6667801D8532F100E2161A /* Main.storyboard in Resources */,
+				3AB942051D86CF3A00E6112F /* FormViewController.xib in Resources */,
 				3A66679E1D85393C00E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +285,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667BA1D85411B00E2161A /* CustomCell.xib in Resources */,
 				3A66679F1D85393C00E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667B91D85411B00E2161A /* CustomCell.xib in Resources */,
 				3A6667B11D853B2200E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,11 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667BC1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
 				3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */,
+				3AB942041D86CF3A00E6112F /* FormViewController.swift in Sources */,
 				3A4A15381D8553BD00468D8B /* MapViewController.swift in Sources */,
 				3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */,
-				3A6667B51D85411B00E2161A /* CustomCell.swift in Sources */,
 				3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */,
 				3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */,
 			);
@@ -327,9 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667BE1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
+				3AB942071D86D08700E6112F /* FormViewController.swift in Sources */,
 				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
-				3A6667B71D85411B00E2161A /* CustomCell.swift in Sources */,
 				3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */,
 				3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
@@ -340,9 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667BD1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
+				3AB942061D86D08600E6112F /* FormViewController.swift in Sources */,
 				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
-				3A6667B61D85411B00E2161A /* CustomCell.swift in Sources */,
 				3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */,
 				3A4A15391D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
