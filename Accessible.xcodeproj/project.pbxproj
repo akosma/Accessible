@@ -34,6 +34,8 @@
 		3A6667BD1D854A6900E2161A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */; };
 		3A6667BE1D854A6900E2161A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667BB1D854A6900E2161A /* DetailTableViewController.swift */; };
 		3A6667C11D854F2500E2161A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6667C01D854F2500E2161A /* MapKit.framework */; };
+		3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
+		3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -328,6 +330,7 @@
 				3A6667BE1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
 				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A6667B71D85411B00E2161A /* CustomCell.swift in Sources */,
+				3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */,
 				3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
 			);
@@ -340,6 +343,7 @@
 				3A6667BD1D854A6900E2161A /* DetailTableViewController.swift in Sources */,
 				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
 				3A6667B61D85411B00E2161A /* CustomCell.swift in Sources */,
+				3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */,
 				3A4A15391D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
 			);

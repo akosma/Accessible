@@ -11,15 +11,15 @@ import GameplayKit
 
 func loadJSON() -> [Customer] {
     let filename = "Data"
+    var results = [Customer]()
     guard let url = Bundle.main.url(forResource: filename, withExtension: "json") else {
-        return [Customer]()
+        return results
     }
     do {
         let data = try Data(contentsOf: url)
         let json = try JSONSerialization.jsonObject(with: data, options: .init(rawValue: 0)) as? [[String: AnyObject]]
         let shuffled = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: json!) as? [[String: AnyObject]]
 
-        var results = [Customer]()
         for item in shuffled! {
             var customer = Customer()
             customer.name = item["name"] as! String
@@ -37,5 +37,5 @@ func loadJSON() -> [Customer] {
     catch {
         // Do nothing
     }
-    return [Customer]()
+    return results
 }

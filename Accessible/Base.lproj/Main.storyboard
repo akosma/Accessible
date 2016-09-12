@@ -252,7 +252,7 @@
                         <outlet property="ageCell" destination="lAB-5c-UOv" id="PH3-dG-wSK"/>
                         <outlet property="cityCell" destination="jK4-fv-kaH" id="Rma-jf-z0S"/>
                         <outlet property="countryCell" destination="deT-5N-TaG" id="Gn6-8Z-D9u"/>
-                        <outlet property="nameCell" destination="Iai-Aw-zxd" id="9Vl-t8-NS3"/>
+                        <outlet property="nameCell" destination="Iai-Aw-zxd" id="imx-Rk-uVH"/>
                         <outlet property="zipCell" destination="xVX-81-Qpy" id="Ehc-69-K1V"/>
                     </connections>
                 </tableViewController>
