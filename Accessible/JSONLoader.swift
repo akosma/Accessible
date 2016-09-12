@@ -17,19 +17,14 @@ func loadJSON() -> [Customer] {
     }
     do {
         let data = try Data(contentsOf: url)
-        let json = try JSONSerialization.jsonObject(with: data, options: .init(rawValue: 0)) as? [[String: AnyObject]]
-        let shuffled = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: json!) as? [[String: AnyObject]]
-
-        for item in shuffled! {
-            var customer = Customer()
-            customer.name = item["name"] as! String
-            customer.address = item["address"] as! String
-            customer.zip = item["zip"] as! String
-            customer.city = item["city"] as! String
-            customer.country = item["country"] as! String
-            customer.location = item["location"] as! String
-            customer.age = item["age"] as! Int
-            results.append(customer)
+        let json = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: AnyObject]]
+        let random = GKRandomSource.sharedRandom()
+        if let shuffled = random.arrayByShufflingObjects(in: json!) as? [[String: AnyObject]] {
+            for item in shuffled {
+                if let customer = Customer(json: item) {
+                    results.append(customer)
+                }
+            }
         }
         
         return results
