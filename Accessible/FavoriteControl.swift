@@ -12,7 +12,6 @@ class FavoriteControl: UIControl {
 
     let blackStar = "★"
     let whiteStar = "☆"
-    
     let label = UILabel()
     
     var isOn = false {

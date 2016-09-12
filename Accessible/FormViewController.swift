@@ -50,13 +50,6 @@ class FormViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showMap" {
-            let controller = segue.destination as! MapViewController
-            controller.customer = customer
-        }
-    }
-    
     @IBAction func favoriteTouched(_ sender: AnyObject) {
         customer?.favorite = favoriteSwitch.isOn
     }

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A4A15381D8553BD00468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
-		3A4A15391D85562300468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
-		3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A15371D8553BD00468D8B /* MapViewController.swift */; };
 		3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
 		3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
@@ -54,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A4A15371D8553BD00468D8B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3A4A153B1D855A2F00468D8B /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		3A6667751D8532F100E2161A /* Accessible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6667781D8532F100E2161A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +126,6 @@
 				3A6667781D8532F100E2161A /* AppDelegate.swift */,
 				3A66677A1D8532F100E2161A /* MasterViewController.swift */,
 				3AB942021D86CF3A00E6112F /* FormViewController.swift */,
-				3A4A15371D8553BD00468D8B /* MapViewController.swift */,
 				3A4A153B1D855A2F00468D8B /* Customer.swift */,
 				3A6667A01D85395E00E2161A /* JSONLoader.swift */,
 				3AB942081D86DEC600E6112F /* FavoriteControl.swift */,
@@ -311,7 +306,6 @@
 			files = (
 				3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */,
 				3AB942041D86CF3A00E6112F /* FormViewController.swift in Sources */,
-				3A4A15381D8553BD00468D8B /* MapViewController.swift in Sources */,
 				3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */,
 				3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */,
@@ -326,7 +320,6 @@
 				3AB942071D86D08700E6112F /* FormViewController.swift in Sources */,
 				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
 				3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */,
-				3A4A153A1D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
 				3AB9420B1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
@@ -339,7 +332,6 @@
 				3AB942061D86D08600E6112F /* FormViewController.swift in Sources */,
 				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
 				3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */,
-				3A4A15391D85562300468D8B /* MapViewController.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
 				3AB9420A1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
