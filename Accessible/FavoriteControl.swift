@@ -18,11 +18,11 @@ class FavoriteControl: UIControl {
         didSet {
             if isOn {
                 label.text = blackStar
-                accessibilityValue = "Favorite customer"
+//                accessibilityValue = "Favorite customer"
             }
             else {
                 label.text = whiteStar
-                accessibilityValue = "Not favorite customer"
+//                accessibilityValue = "Not favorite customer"
             }
         }
     }
@@ -30,13 +30,13 @@ class FavoriteControl: UIControl {
     override init(frame: CGRect) {
         super.init(frame: frame)
         initLabel()
-        initAccessibility()
+//        initAccessibility()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initLabel()
-        initAccessibility()
+//        initAccessibility()
     }
     
     func initLabel() {
@@ -49,12 +49,12 @@ class FavoriteControl: UIControl {
         label.font = font
     }
     
-    func initAccessibility() {
-        isAccessibilityElement = true
-        accessibilityTraits = UIAccessibilityTraitButton
-        accessibilityLabel = "Favorite"
-        accessibilityValue = "Not favorite customer"
-    }
+//    func initAccessibility() {
+//        isAccessibilityElement = true
+//        accessibilityTraits = UIAccessibilityTraitButton
+//        accessibilityLabel = "Favorite"
+//        accessibilityValue = "Not favorite customer"
+//    }
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
