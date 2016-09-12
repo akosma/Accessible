@@ -19,21 +19,25 @@ class FavoriteControl: UIControl {
         didSet {
             if isOn {
                 label.text = blackStar
+//                accessibilityValue = "Yes it is favorite"
             }
             else {
                 label.text = whiteStar
+//                accessibilityValue = "No it is not favorite"
             }
         }
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initLabel()
+//        initAccessibility()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initLabel()
+//        initAccessibility()
     }
     
     func initLabel() {
@@ -46,12 +50,19 @@ class FavoriteControl: UIControl {
         label.font = font
     }
     
+//    func initAccessibility() {
+//        isAccessibilityElement = true
+//        accessibilityTraits = UIAccessibilityTraitButton
+//        accessibilityLabel = "Favorite"
+//        accessibilityValue = "Not Favorite"
+//    }
+    
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         addSubview(label)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         isOn = !isOn
         sendActions(for: .valueChanged)
     }
