@@ -18,10 +18,6 @@ class MasterViewController: UITableViewController {
 //        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
 //    }
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Customers"
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showForm" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
@@ -34,6 +30,10 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return customers.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Customers"
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

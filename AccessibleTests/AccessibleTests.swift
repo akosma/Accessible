@@ -25,7 +25,16 @@ class AccessibleTests: XCTestCase {
         XCTAssertNotNil(obj)
         XCTAssertEqual(obj.count, 100)
         
-        let firstObj = obj[0]
-        XCTAssertNotNil(firstObj.country)
+        let firstObj = obj.first
+        XCTAssertNotNil(firstObj)
+        XCTAssertNotNil(firstObj!.name)
+        XCTAssertNotNil(firstObj!.address)
+        XCTAssertNotNil(firstObj!.age)
+        XCTAssertNotNil(firstObj!.zip)
+        XCTAssertNotNil(firstObj!.city)
+        XCTAssertNotNil(firstObj!.country)
+        XCTAssertNotNil(firstObj!.favorite)
+        XCTAssertNotNil(firstObj!.id)
+        XCTAssertNotNil(firstObj!.location)
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 
 struct Customer {
+    var id = ""
     var name = ""
     var address = ""
     var age = 0
@@ -28,7 +29,8 @@ extension Customer {
             let zip = json["zip"] as? String,
             let city = json["city"] as? String,
             let country = json["country"] as? String,
-            let location = json["location"] as? String
+            let location = json["location"] as? String,
+            let id = json["id"] as? String
             else {
                 return nil
         }
@@ -40,6 +42,7 @@ extension Customer {
         self.city = city
         self.country = country
         self.favorite = false
+        self.id = id
         
         let coords = location.components(separatedBy: ", ")
         if let lat = Double(coords[0]), let long = Double(coords[1]) {
