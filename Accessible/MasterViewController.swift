@@ -43,7 +43,7 @@ class MasterViewController: UITableViewController {
         cell.textLabel?.text = object.name
         let completeAddress = "\(object.address) – \(object.zip) \(object.city)"
         cell.detailTextLabel?.text = completeAddress
-        cell.accessibilityValue = object.name
+//        cell.accessibilityLabel = object.name
         return cell
     }
 }
