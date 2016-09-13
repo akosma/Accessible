@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import AudioToolbox
-import AVFoundation
+//import AudioToolbox
+//import AVFoundation
 
 class FormViewController: UIViewController {
 
@@ -43,7 +43,7 @@ class FormViewController: UIViewController {
             zipField.text = customer.zip
             cityField.text = customer.city
             countryField.text = customer.country
-            ageField.text = "\(customer.age)"
+            ageField.text = customer.age.description
             favoriteSwitch.isOn = customer.favorite
             
 //            let center = NotificationCenter.default
