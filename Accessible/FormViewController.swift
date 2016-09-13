@@ -74,42 +74,19 @@ class FormViewController: UIViewController {
         for field in fields {
             let label = labels[counter]
             if field.text?.lengthOfBytes(using: .utf8) == 0 {
-                label.textColor = .red
-                
-//                let font = UIFont.preferredFont(forTextStyle: .body)
-//                label.font = UIFont.boldSystemFont(ofSize: font.pointSize)
-//                
-//                if let text = label.text,
-//                    !text.hasPrefix(errorPrefix) {
-//                    label.text = "\(errorPrefix)\(text)"
-//                }
+                showError(for: label)
 //                errors += 1
             }
             else {
-                label.textColor = .black
-
-//                let font = UIFont.preferredFont(forTextStyle: .body)
-//                label.font = UIFont.systemFont(ofSize: font.pointSize)
-//
-//                if let text = label.text,
-//                    text.hasPrefix(errorPrefix) {
-//                    let index = text.index(text.startIndex, offsetBy: 2)
-//                    label.text = text.substring(from: index)
-//                }
+                hideError(for: label)
             }
             counter += 1
         }
 //        if errors > 0 {
-//            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+//            vibrate()
 //            if (voiceOverRunning) {
 //                let text = errorLabel.text!
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-//                    let utterance = AVSpeechUtterance(string: text)
-//                    utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-//                    
-//                    let synthesizer = AVSpeechSynthesizer()
-//                    synthesizer.speak(utterance)
-//                })
+//                speak(text)
 //            }
 //            errorLabel.isHidden = false
 //        }
@@ -141,3 +118,44 @@ extension FormViewController: UITextFieldDelegate {
 //        voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
 //    }
 //}
+
+extension FormViewController {
+    func showError(for label: UILabel) {
+        label.textColor = .red
+        
+//        let font = UIFont.preferredFont(forTextStyle: .body)
+//        label.font = UIFont.boldSystemFont(ofSize: font.pointSize)
+//        
+//        if let text = label.text,
+//            !text.hasPrefix(errorPrefix) {
+//            label.text = "\(errorPrefix)\(text)"
+//        }
+    }
+    
+    func hideError(for label: UILabel) {
+        label.textColor = .black
+        
+//        let font = UIFont.preferredFont(forTextStyle: .body)
+//        label.font = UIFont.systemFont(ofSize: font.pointSize)
+//        
+//        if let text = label.text,
+//            text.hasPrefix(errorPrefix) {
+//            let index = text.index(text.startIndex, offsetBy: 2)
+//            label.text = text.substring(from: index)
+//        }
+    }
+    
+//    func vibrate() {
+//        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+//    }
+    
+//    func speak(_ text: String) {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+//            let utterance = AVSpeechUtterance(string: text)
+//            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+//            
+//            let synthesizer = AVSpeechSynthesizer()
+//            synthesizer.speak(utterance)
+//        })
+//    }
+}
