@@ -47,6 +47,7 @@ class FavoriteControl: UIControl {
         
         let font = UIFont.systemFont(ofSize: 40.0)
         label.font = font
+        addSubview(label)
     }
     
 //    func initAccessibility() {
@@ -55,11 +56,6 @@ class FavoriteControl: UIControl {
 //        accessibilityLabel = "Favorite"
 //        accessibilityValue = "Not favorite customer"
 //    }
-    
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        addSubview(label)
-    }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         isOn = !isOn
