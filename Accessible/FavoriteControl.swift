@@ -12,13 +12,13 @@ import UIKit
 
     @IBInspectable var selectedText : String = "★" {
         didSet {
-            label.text = selectedText
+            refresh()
         }
     }
     
     @IBInspectable var deselectedText : String = "☆" {
         didSet {
-            label.text = deselectedText
+            refresh()
         }
     }
     
@@ -26,14 +26,7 @@ import UIKit
     
     @IBInspectable var isOn : Bool = false {
         didSet {
-            if isOn {
-                label.text = selectedText
-//                accessibilityValue = "Favorite customer"
-            }
-            else {
-                label.text = deselectedText
-//                accessibilityValue = "Not favorite customer"
-            }
+            refresh()
         }
     }
     
@@ -49,13 +42,24 @@ import UIKit
 //        initAccessibility()
     }
     
-    func initLabel() {
+    private func initLabel() {
         label.text = deselectedText
         label.isUserInteractionEnabled = true
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 40.0)
         label.adjustsFontSizeToFitWidth = true
         addSubview(label)
+    }
+    
+    private func refresh() {
+        if isOn {
+            label.text = selectedText
+            //                accessibilityValue = "Favorite customer"
+        }
+        else {
+            label.text = deselectedText
+            //                accessibilityValue = "Not favorite customer"
+        }
     }
     
 //    func initAccessibility() {
