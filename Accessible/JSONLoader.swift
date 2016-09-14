@@ -30,7 +30,7 @@ func loadJSON() -> [Customer] {
         return results
     }
     catch {
-        // Do nothing
+        // Do nothing, which is not a good idea, but well, such is life.
     }
     return results
 }
