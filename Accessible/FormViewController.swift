@@ -45,19 +45,19 @@ class FormViewController: UIViewController {
             countryField.text = customer.country
             ageField.text = customer.age.description
             favoriteSwitch.isOn = customer.favorite
-            
-//            let center = NotificationCenter.default
-//            center.addObserver(self,
-//                               selector: #selector(dynamicType),
-//                               name: .UIContentSizeCategoryDidChange,
-//                               object: nil)
-//            
-//            let not = NSNotification.Name(rawValue: UIAccessibilityVoiceOverStatusChanged)
-//            center.addObserver(self,
-//                               selector: #selector(voiceOverStatus),
-//                               name: not,
-//                               object: nil)
         }
+        
+//        let center = NotificationCenter.default
+//        center.addObserver(self,
+//                           selector: #selector(dynamicType),
+//                           name: .UIContentSizeCategoryDidChange,
+//                           object: nil)
+        
+//        let not = NSNotification.Name(rawValue: UIAccessibilityVoiceOverStatusChanged)
+//        center.addObserver(self,
+//                           selector: #selector(voiceOverStatus),
+//                           name: not,
+//                           object: nil)
     }
     
     @IBAction func favoriteTouched(_ sender: AnyObject) {
