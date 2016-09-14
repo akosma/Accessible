@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A3B5C031D89261D00AD0825 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
-		3A3B5C041D89261E00AD0825 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
-		3A3B5C051D89262100AD0825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
-		3A3B5C061D89262200AD0825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
+		3A0781921D8967E900A5B130 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
+		3A0781931D8967F700A5B130 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
 		3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
@@ -19,22 +17,12 @@
 		3A6667851D8532F100E2161A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6667831D8532F100E2161A /* LaunchScreen.storyboard */; };
 		3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66678F1D8532F100E2161A /* AccessibleUITests.swift */; };
 		3A66679E1D85393C00E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
-		3A66679F1D85393C00E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
 		3A6667A11D85395E00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
-		3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
 		3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A91D85399000E2161A /* AccessibleTests.swift */; };
-		3A6667B11D853B2200E2161A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A66679D1D85393C00E2161A /* Data.json */; };
-		3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667A01D85395E00E2161A /* JSONLoader.swift */; };
 		3A6667C11D854F2500E2161A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6667C01D854F2500E2161A /* MapKit.framework */; };
 		3AB942041D86CF3A00E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
 		3AB942051D86CF3A00E6112F /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB942031D86CF3A00E6112F /* FormViewController.xib */; };
-		3AB942061D86D08600E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
-		3AB942071D86D08700E6112F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942021D86CF3A00E6112F /* FormViewController.swift */; };
 		3AB942091D86DEC600E6112F /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942081D86DEC600E6112F /* FavoriteControl.swift */; };
-		3AB9420A1D86DEC600E6112F /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942081D86DEC600E6112F /* FavoriteControl.swift */; };
-		3AB9420B1D86DEC600E6112F /* FavoriteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB942081D86DEC600E6112F /* FavoriteControl.swift */; };
-		3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
-		3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A66679F1D85393C00E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6667B11D853B2200E2161A /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,13 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB942071D86D08700E6112F /* FormViewController.swift in Sources */,
-				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
-				3A3B5C041D89261E00AD0825 /* MasterViewController.swift in Sources */,
-				3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */,
-				3A3B5C061D89262200AD0825 /* AppDelegate.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
-				3AB9420B1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,13 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB942061D86D08600E6112F /* FormViewController.swift in Sources */,
-				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
-				3A3B5C031D89261D00AD0825 /* MasterViewController.swift in Sources */,
-				3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */,
-				3A3B5C051D89262100AD0825 /* AppDelegate.swift in Sources */,
+				3A0781931D8967F700A5B130 /* Customer.swift in Sources */,
+				3A0781921D8967E900A5B130 /* JSONLoader.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
-				3AB9420A1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

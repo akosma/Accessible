@@ -71,7 +71,7 @@ import UIKit
     }
     
     override func prepareForInterfaceBuilder() {
-        initLabel()
         super.prepareForInterfaceBuilder()
+        initLabel()
     }
 }
