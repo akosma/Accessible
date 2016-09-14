@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3B5C031D89261D00AD0825 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
+		3A3B5C041D89261E00AD0825 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
+		3A3B5C051D89262100AD0825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
+		3A3B5C061D89262200AD0825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
 		3A4A153C1D855A2F00468D8B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A153B1D855A2F00468D8B /* Customer.swift */; };
 		3A6667791D8532F100E2161A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6667781D8532F100E2161A /* AppDelegate.swift */; };
 		3A66677B1D8532F100E2161A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66677A1D8532F100E2161A /* MasterViewController.swift */; };
@@ -319,7 +323,9 @@
 			files = (
 				3AB942071D86D08700E6112F /* FormViewController.swift in Sources */,
 				3A6667A21D85395E00E2161A /* JSONLoader.swift in Sources */,
+				3A3B5C041D89261E00AD0825 /* MasterViewController.swift in Sources */,
 				3AD76DCA1D859FFB00A5E838 /* Customer.swift in Sources */,
+				3A3B5C061D89262200AD0825 /* AppDelegate.swift in Sources */,
 				3A6667901D8532F100E2161A /* AccessibleUITests.swift in Sources */,
 				3AB9420B1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);
@@ -331,7 +337,9 @@
 			files = (
 				3AB942061D86D08600E6112F /* FormViewController.swift in Sources */,
 				3A6667B21D853B3A00E2161A /* JSONLoader.swift in Sources */,
+				3A3B5C031D89261D00AD0825 /* MasterViewController.swift in Sources */,
 				3AD76DC91D859FFA00A5E838 /* Customer.swift in Sources */,
+				3A3B5C051D89262100AD0825 /* AppDelegate.swift in Sources */,
 				3A6667AA1D85399000E2161A /* AccessibleTests.swift in Sources */,
 				3AB9420A1D86DEC600E6112F /* FavoriteControl.swift in Sources */,
 			);

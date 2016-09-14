@@ -8,20 +8,30 @@
 
 import UIKit
 
-class FavoriteControl: UIControl {
+@IBDesignable class FavoriteControl: UIControl {
 
-    let blackStar = "★"
-    let whiteStar = "☆"
-    let label = UILabel()
+    @IBInspectable var selectedText : String = "★" {
+        didSet {
+            label.text = selectedText
+        }
+    }
     
-    var isOn = false {
+    @IBInspectable var deselectedText : String = "☆" {
+        didSet {
+            label.text = deselectedText
+        }
+    }
+    
+    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+    
+    @IBInspectable var isOn : Bool = false {
         didSet {
             if isOn {
-                label.text = blackStar
+                label.text = selectedText
 //                accessibilityValue = "Favorite customer"
             }
             else {
-                label.text = whiteStar
+                label.text = deselectedText
 //                accessibilityValue = "Not favorite customer"
             }
         }
@@ -40,13 +50,11 @@ class FavoriteControl: UIControl {
     }
     
     func initLabel() {
-        label.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-        label.text = whiteStar
+        label.text = deselectedText
         label.isUserInteractionEnabled = true
         label.textAlignment = .center
-        
-        let font = UIFont.systemFont(ofSize: 40.0)
-        label.font = font
+        label.font = UIFont.systemFont(ofSize: 40.0)
+        label.adjustsFontSizeToFitWidth = true
         addSubview(label)
     }
     
@@ -60,5 +68,10 @@ class FavoriteControl: UIControl {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         isOn = !isOn
         sendActions(for: .valueChanged)
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        initLabel()
+        super.prepareForInterfaceBuilder()
     }
 }

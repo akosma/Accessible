@@ -18,7 +18,7 @@
                 <outlet property="countryLabel" destination="K8w-pT-7mO" id="6Bg-U7-zve"/>
                 <outlet property="errorLabel" destination="IgX-4x-Sq4" id="piH-Zy-ruu"/>
                 <outlet property="favoriteLabel" destination="7vj-dH-Hpm" id="amc-Ve-xhS"/>
-                <outlet property="favoriteSwitch" destination="dk8-xJ-9qK" id="GOZ-j6-ZN9"/>
+                <outlet property="favoriteSwitch" destination="uUf-ue-CJX" id="f4f-zW-6Qx"/>
                 <outlet property="nameField" destination="7gg-0y-iQ0" id="mC4-F8-4yc"/>
                 <outlet property="nameLabel" destination="0oA-8h-MzE" id="y3g-b2-TnO"/>
                 <outlet property="saveButton" destination="cTO-9c-5ZR" id="B9h-49-OkY"/>
@@ -166,22 +166,18 @@
                         <action selector="save:" destination="-1" eventType="touchUpInside" id="UTH-Sn-4iu"/>
                     </connections>
                 </button>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-xJ-9qK" customClass="FavoriteControl" customModule="Accessible" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-ue-CJX" customClass="FavoriteControl" customModule="Accessible" customModuleProvider="target">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="jiJ-7a-PiL"/>
-                        <constraint firstAttribute="width" constant="44" id="ygo-fh-W1m"/>
+                        <constraint firstAttribute="height" constant="44" id="5ea-x7-CdI"/>
+                        <constraint firstAttribute="width" constant="44" id="KXt-Dy-9ie"/>
                     </constraints>
-                    <connections>
-                        <action selector="favoriteTouched:" destination="-1" eventType="valueChanged" id="GjV-sW-ZKP"/>
-                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="mv2-eD-8dW" firstAttribute="baseline" secondItem="Qtp-sK-DQL" secondAttribute="baseline" id="1bW-so-Xc8"/>
                 <constraint firstItem="J4a-od-wWE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="1i4-Br-6IN"/>
-                <constraint firstItem="dk8-xJ-9qK" firstAttribute="baseline" secondItem="7vj-dH-Hpm" secondAttribute="baseline" id="2mi-8A-wsi"/>
                 <constraint firstItem="mv2-eD-8dW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="3jG-Hc-qHF"/>
                 <constraint firstItem="cTO-9c-5ZR" firstAttribute="top" secondItem="7vj-dH-Hpm" secondAttribute="bottom" constant="7" id="4kR-wj-6k1"/>
                 <constraint firstItem="7gg-0y-iQ0" firstAttribute="baseline" secondItem="0oA-8h-MzE" secondAttribute="baseline" id="5ly-HO-f5X"/>
@@ -209,7 +205,8 @@
                 <constraint firstItem="Qtp-sK-DQL" firstAttribute="top" secondItem="db3-03-aKR" secondAttribute="bottom" constant="17" id="jN8-cx-88g"/>
                 <constraint firstItem="0oA-8h-MzE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="jun-Yu-Hbg"/>
                 <constraint firstItem="Ti8-iw-NKM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="oLa-9H-Ewm"/>
-                <constraint firstItem="dk8-xJ-9qK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="wLP-ZN-rFO"/>
+                <constraint firstItem="uUf-ue-CJX" firstAttribute="baseline" secondItem="7vj-dH-Hpm" secondAttribute="baseline" id="scc-GF-tbh"/>
+                <constraint firstItem="uUf-ue-CJX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="122" id="tWb-Ih-eoR"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
