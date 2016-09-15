@@ -7,8 +7,8 @@
 //
 
 import UIKit
-//import AudioToolbox
-//import AVFoundation
+import AudioToolbox
+import AVFoundation
 
 class FormViewController: UIViewController {
 
@@ -32,8 +32,8 @@ class FormViewController: UIViewController {
     @IBOutlet var fields: [UITextField]!
     
     var customer: Customer?
-//    var voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
-//    let errorPrefix = "* "
+    var voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
+    let errorPrefix = "* "
     
     override func viewDidLoad() {
         if let customer = customer {
@@ -47,17 +47,17 @@ class FormViewController: UIViewController {
             favoriteSwitch.isOn = customer.favorite
         }
         
-//        let center = NotificationCenter.default
-//        center.addObserver(self,
-//                           selector: #selector(dynamicType),
-//                           name: .UIContentSizeCategoryDidChange,
-//                           object: nil)
+        let center = NotificationCenter.default
+        center.addObserver(self,
+                           selector: #selector(dynamicType),
+                           name: .UIContentSizeCategoryDidChange,
+                           object: nil)
         
-//        let not = NSNotification.Name(rawValue: UIAccessibilityVoiceOverStatusChanged)
-//        center.addObserver(self,
-//                           selector: #selector(voiceOverStatus),
-//                           name: not,
-//                           object: nil)
+        let not = NSNotification.Name(rawValue: UIAccessibilityVoiceOverStatusChanged)
+        center.addObserver(self,
+                           selector: #selector(voiceOverStatus),
+                           name: not,
+                           object: nil)
     }
     
     @IBAction func favoriteTouched(_ sender: AnyObject) {
@@ -70,29 +70,29 @@ class FormViewController: UIViewController {
     
     func validate() {
         var counter = 0
-//        var errors = 0
+        var errors = 0
         for field in fields {
             let label = labels[counter]
             if field.text?.lengthOfBytes(using: .utf8) == 0 {
                 showError(for: label)
-//                errors += 1
+                errors += 1
             }
             else {
                 hideError(for: label)
             }
             counter += 1
         }
-//        if errors > 0 {
-//            vibrate()
-//            if (voiceOverRunning) {
-//                let text = errorLabel.text!
-//                speak(text)
-//            }
-//            errorLabel.isHidden = false
-//        }
-//        else {
-//            errorLabel.isHidden = true
-//        }
+        if errors > 0 {
+            vibrate()
+            if (voiceOverRunning) {
+                let text = errorLabel.text!
+                speak(text)
+            }
+            errorLabel.isHidden = false
+        }
+        else {
+            errorLabel.isHidden = true
+        }
     }
 }
 
@@ -102,60 +102,59 @@ extension FormViewController: UITextFieldDelegate {
     }
 }
 
-//extension FormViewController {
-//    func dynamicType(notification: Notification) {
-//        let font = UIFont.preferredFont(forTextStyle: .body)
-//        for label in labels {
-//            label.font = font
-//        }
-//        for field in fields {
-//            field.font = font
-//        }
-//        saveButton.titleLabel?.font = font
-//    }
-//    
-//    func voiceOverStatus(notification: Notification) {
-//        voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
-//    }
-//}
+extension FormViewController {
+    func dynamicType(notification: Notification) {
+        let font = UIFont.preferredFont(forTextStyle: .body)
+        for label in labels {
+            label.font = font
+        }
+        for field in fields {
+            field.font = font
+        }
+        saveButton.titleLabel?.font = font
+    }
+    
+    func voiceOverStatus(notification: Notification) {
+        voiceOverRunning = UIAccessibilityIsVoiceOverRunning()
+    }
+}
 
 extension FormViewController {
     func showError(for label: UILabel) {
         label.textColor = .red
         
-//        let font = UIFont.preferredFont(forTextStyle: .body)
-//        label.font = UIFont.boldSystemFont(ofSize: font.pointSize)
-//        
-//        if let text = label.text,
-//            !text.hasPrefix(errorPrefix) {
-//            label.text = "\(errorPrefix)\(text)"
-//        }
+        let font = UIFont.preferredFont(forTextStyle: .body)
+        label.font = UIFont.boldSystemFont(ofSize: font.pointSize)
+        
+        if let text = label.text,
+            !text.hasPrefix(errorPrefix) {
+            label.text = "\(errorPrefix)\(text)"
+        }
     }
     
     func hideError(for label: UILabel) {
         label.textColor = .black
         
-//        let font = UIFont.preferredFont(forTextStyle: .body)
-//        label.font = UIFont.systemFont(ofSize: font.pointSize)
-//        
-//        if let text = label.text,
-//            text.hasPrefix(errorPrefix) {
-//            let index = text.index(text.startIndex, offsetBy: 2)
-//            label.text = text.substring(from: index)
-//        }
+        let font = UIFont.preferredFont(forTextStyle: .body)
+        label.font = UIFont.systemFont(ofSize: font.pointSize)
+        
+        if let text = label.text,
+            text.hasPrefix(errorPrefix) {
+            let index = text.index(text.startIndex, offsetBy: 2)
+            label.text = text.substring(from: index)
+        }
     }
     
-//    func vibrate() {
-//        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-//    }
+    func vibrate() {
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+    }
     
-//    func speak(_ text: String) {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-//            let utterance = AVSpeechUtterance(string: text)
-//            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-//            
-//            let synthesizer = AVSpeechSynthesizer()
-//            synthesizer.speak(utterance)
-//        })
-//    }
+    func speak(_ text: String) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            let utterance = AVSpeechUtterance(string: text)
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            let synthesizer = AVSpeechSynthesizer()
+            synthesizer.speak(utterance)
+        })
+    }
 }

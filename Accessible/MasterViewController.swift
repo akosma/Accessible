@@ -12,11 +12,11 @@ class MasterViewController: UITableViewController {
 
     var customers = loadJSON()
     
-//    override func viewDidLoad() {
-//        self.tableView.rowHeight = UITableViewAutomaticDimension;
-//        self.tableView.estimatedRowHeight = 44.0;
-//        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
-//    }
+    override func viewDidLoad() {
+        self.tableView.rowHeight = UITableViewAutomaticDimension;
+        self.tableView.estimatedRowHeight = 44.0;
+        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showForm" {
@@ -43,7 +43,7 @@ class MasterViewController: UITableViewController {
         cell.textLabel?.text = customer.name
         let completeAddress = "\(customer.address) – \(customer.zip) \(customer.city)"
         cell.detailTextLabel?.text = completeAddress
-//        cell.accessibilityLabel = customer.name
+        cell.accessibilityLabel = customer.name
         return cell
     }
 }

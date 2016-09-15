@@ -33,13 +33,13 @@ import UIKit
     override init(frame: CGRect) {
         super.init(frame: frame)
         initLabel()
-//        initAccessibility()
+        initAccessibility()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initLabel()
-//        initAccessibility()
+        initAccessibility()
     }
     
     private func initLabel() {
@@ -54,20 +54,20 @@ import UIKit
     private func refresh() {
         if isOn {
             label.text = selectedText
-//                accessibilityValue = "Favorite customer"
+            accessibilityValue = "Favorite customer"
         }
         else {
             label.text = deselectedText
-//                accessibilityValue = "Not favorite customer"
+            accessibilityValue = "Not favorite customer"
         }
     }
     
-//    func initAccessibility() {
-//        isAccessibilityElement = true
-//        accessibilityTraits = UIAccessibilityTraitButton
-//        accessibilityLabel = "Favorite"
-//        accessibilityValue = "Not favorite customer"
-//    }
+    func initAccessibility() {
+        isAccessibilityElement = true
+        accessibilityTraits = UIAccessibilityTraitButton
+        accessibilityLabel = "Favorite"
+        accessibilityValue = "Not favorite customer"
+    }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         isOn = !isOn
