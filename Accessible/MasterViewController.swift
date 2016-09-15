@@ -39,11 +39,11 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = customers[indexPath.row]
-        cell.textLabel?.text = object.name
-        let completeAddress = "\(object.address) – \(object.zip) \(object.city)"
+        let customer = customers[indexPath.row]
+        cell.textLabel?.text = customer.name
+        let completeAddress = "\(customer.address) – \(customer.zip) \(customer.city)"
         cell.detailTextLabel?.text = completeAddress
-//        cell.accessibilityLabel = object.name
+//        cell.accessibilityLabel = customer.name
         return cell
     }
 }
