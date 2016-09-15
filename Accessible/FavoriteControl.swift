@@ -54,11 +54,11 @@ import UIKit
     private func refresh() {
         if isOn {
             label.text = selectedText
-            //                accessibilityValue = "Favorite customer"
+//                accessibilityValue = "Favorite customer"
         }
         else {
             label.text = deselectedText
-            //                accessibilityValue = "Not favorite customer"
+//                accessibilityValue = "Not favorite customer"
         }
     }
     
