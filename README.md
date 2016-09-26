@@ -8,3 +8,4 @@ in the [Mobile Developer Summit Bangalore
 The slides of the presentation are available in
 [SpeakerDeck](https://speakerdeck.com/akosma/making-ios-applications-accessible).
 
+
