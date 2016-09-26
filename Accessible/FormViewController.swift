@@ -71,7 +71,7 @@ class FormViewController: UIViewController {
     func validate() {
         var counter = 0
         var errors = 0
-        for field in fields {
+        fields.forEach { field in
             let label = labels[counter]
             if field.text?.lengthOfBytes(using: .utf8) == 0 {
                 showError(for: label)
@@ -105,10 +105,10 @@ extension FormViewController: UITextFieldDelegate {
 extension FormViewController {
     func dynamicType(notification: Notification) {
         let font = UIFont.preferredFont(forTextStyle: .body)
-        for label in labels {
+        labels.forEach { label in
             label.font = font
         }
-        for field in fields {
+        fields.forEach { field in
             field.font = font
         }
         saveButton.titleLabel?.font = font

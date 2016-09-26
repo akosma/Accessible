@@ -20,7 +20,7 @@ func loadJSON() -> [Customer] {
         let json = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: AnyObject]]
         let random = GKRandomSource.sharedRandom()
         if let shuffled = random.arrayByShufflingObjects(in: json!) as? [[String: AnyObject]] {
-            for item in shuffled {
+            shuffled.forEach { item in
                 if let customer = Customer(json: item) {
                     results.append(customer)
                 }
